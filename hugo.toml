@@ -1,10 +1,11 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://example.com/'
+theme = 'hugo-book'
 
-# Change the default theme to be use when building the site with Hugo
-theme = "hugo-theme-relearn"
+# Book configuration
+disablePathToLower = true
+enableGitInfo = true
 
-# For search functionality
-[outputs]
-home = [ "HTML", "RSS", "SEARCH"]
+[params]
+  # (Optional, default light) Sets color theme: light, dark or auto.
+  # Theme 'auto' switches between dark and light modes based on browser/os preferences
+  BookTheme = 'dark'
